@@ -27,6 +27,12 @@ public class CardTrick {
         System.out.print("Enter a suit (0-3 where 0=Hearts, 1=Diamonds, 2=Clubs, 3=Spades): ");
         int userSuit = scanner.nextInt();
 
+        // Hard-coded lucky card
+Card luckyCard = new Card();
+luckyCard.setValue(7); // You can choose any card value
+luckyCard.setSuit("Hearts"); // You can choose any suit
+
+        
         // Create the user's card
         Card userCard = new Card();
         userCard.setValue(userValue);
